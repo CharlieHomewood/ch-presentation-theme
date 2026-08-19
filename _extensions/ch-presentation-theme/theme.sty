@@ -1,67 +1,37 @@
-\documentclass[ignorenonframetext,aspectratio=169]{beamer}
+\ProvidesPackage{ch-presentation-theme}
 
-$if(fonttheme)$
-\usefonttheme{$fonttheme$}
-$endif$
+\RequirePackage{fontspec}
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
 
-$for(header-includes)$
-$header-includes$
-$endfor$
+\setmainfont{Spectral}
 
-\title{$title$}
-\author{$author$}
+\usefonttheme{serif}
 
-$if(institute)$
-\institute{$institute$}
-$endif$
+% Colours
+\definecolor{accent}{HTML}{D95F02}
+\definecolor{lightblue}{HTML}{EAF4FB}
 
-$if(date)$
-\date{$date$}
-$else$
-\date{}
-$endif$
+% Background
+\setbeamercolor{background canvas}{bg=lightblue}
 
-\begin{document}
+% Text
+\setbeamercolor{normal text}{fg=black}
 
-\begin{frame}[plain]
-  \begin{center}
+% Headings
+\setbeamercolor{frametitle}{fg=black}
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{author}{fg=black}
+\setbeamercolor{date}{fg=black}
 
-    \vspace{1.5cm}
+% Navigation
+\setbeamertemplate{navigation symbols}{}
 
-    {\usebeamerfont{title}
-     \usebeamercolor[fg]{title}
-     \inserttitle\par}
-
-    \vspace{1em}
-
-    {\usebeamerfont{author}
-     \usebeamercolor[fg]{author}
-     \insertauthor\par}
-
-    $if(github)$
-    \vspace{0.6em}
-
-    {\small
-     \href{$github$}{\texttt{$github$}}\par}
-    $endif$
-
-    $if(institute)$
-    \vspace{0.5em}
-
-    {\usebeamerfont{institute}
-     \insertinstitute\par}
-    $endif$
-
-    $if(date)$
-    \vspace{0.5em}
-
-    {\usebeamerfont{date}
-     \insertdate\par}
-    $endif$
-
-  \end{center}
-\end{frame}
-
-$body$
-
-\end{document}
+% Page number
+\setbeamertemplate{footline}{
+  \hfill
+  \usebeamerfont{page number in head/foot}
+  \insertframenumber
+  \hspace{1em}
+  \vspace{1em}
+}
