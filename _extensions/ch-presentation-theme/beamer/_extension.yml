@@ -1,6 +1,0 @@
-title: ch-presentation-theme
-
-contributes:
-  formats:
-    beamer:
-      pdf-engine: lualatex
