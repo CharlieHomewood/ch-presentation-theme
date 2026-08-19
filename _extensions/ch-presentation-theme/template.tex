@@ -1,4 +1,8 @@
-\documentclass[ignorenonframetext,aspectratio=169]{beamer}
+\documentclass[
+  $if(classoption)$$for(classoption)$$classoption$$sep$,$endfor$$endif$
+]{beamer}
+
+\usepackage{theme}
 
 $if(fonttheme)$
 \usefonttheme{$fonttheme$}
