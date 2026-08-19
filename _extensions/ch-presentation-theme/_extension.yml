@@ -5,7 +5,7 @@ quarto-required: ">=1.6.0"
 
 contributes:
   formats:
-    ch-beamer:
+    beamer:
       pdf-engine: lualatex
       template: template.tex
       include-in-header:
