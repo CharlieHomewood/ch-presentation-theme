@@ -1,0 +1,67 @@
+\documentclass[ignorenonframetext,aspectratio=169]{beamer}
+
+$if(fonttheme)$
+\usefonttheme{$fonttheme$}
+$endif$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+\title{$title$}
+\author{$author$}
+
+$if(institute)$
+\institute{$institute$}
+$endif$
+
+$if(date)$
+\date{$date$}
+$else$
+\date{}
+$endif$
+
+\begin{document}
+
+\begin{frame}[plain]
+  \begin{center}
+
+    \vspace{1.5cm}
+
+    {\usebeamerfont{title}
+     \usebeamercolor[fg]{title}
+     \inserttitle\par}
+
+    \vspace{1em}
+
+    {\usebeamerfont{author}
+     \usebeamercolor[fg]{author}
+     \insertauthor\par}
+
+    $if(github)$
+    \vspace{0.6em}
+
+    {\small
+     \href{$github$}{\texttt{$github$}}\par}
+    $endif$
+
+    $if(institute)$
+    \vspace{0.5em}
+
+    {\usebeamerfont{institute}
+     \insertinstitute\par}
+    $endif$
+
+    $if(date)$
+    \vspace{0.5em}
+
+    {\usebeamerfont{date}
+     \insertdate\par}
+    $endif$
+
+  \end{center}
+\end{frame}
+
+$body$
+
+\end{document}
