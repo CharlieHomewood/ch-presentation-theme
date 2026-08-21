@@ -1,0 +1,8 @@
+---
+title: ""
+subtitle: ""
+date: today
+github: ""
+format:
+  	ch-presentation-theme-beamer: default
+---

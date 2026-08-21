@@ -9,11 +9,12 @@ $header-includes$
 $endfor$
 
 \title{$title$}
-\author{$author$}
 
-$if(institute)$
-\institute{$institute$}
+$if(subtitle)$
+\subtitle{$subtitle$}
 $endif$
+
+\author{$author$}
 
 $if(date)$
 \date{$date$}
@@ -32,6 +33,14 @@ $endif$
      \usebeamercolor[fg]{title}
      \inserttitle\par}
 
+    $if(subtitle)$
+    \vspace{0.5em}
+
+    {\usebeamerfont{subtitle}
+     \usebeamercolor[fg]{subtitle}
+     \insertsubtitle\par}
+    $endif$
+
     \vspace{1em}
 
     {\usebeamerfont{author}
@@ -43,13 +52,6 @@ $endif$
 
     {\small
      \href{$github$}{\texttt{$github$}}\par}
-    $endif$
-
-    $if(institute)$
-    \vspace{0.5em}
-
-    {\usebeamerfont{institute}
-     \insertinstitute\par}
     $endif$
 
     $if(date)$
