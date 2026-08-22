@@ -1,8 +1,9 @@
 ---
 title: "INSERT TITLE"
 subtitle: "Insert Subtitle"
+author: "Charlie Homewood"
 date: today
-github: "https://github.com/"
+github: "https://github.com/CharlieHomewood"
 github-qr: true
 format:
   ch-presentation-theme-beamer:

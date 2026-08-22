@@ -14,7 +14,9 @@ $if(subtitle)$
 \subtitle{$subtitle$}
 $endif$
 
+$if(author)$
 \author{$author$}
+$endif$
 
 $if(date)$
 \date{$date$}
@@ -46,9 +48,15 @@ $endif$
 
     \vspace{1em}
 
+    $if(author)$
+    \vspace{0.5em}
+
     {\usebeamerfont{author}
-     \usebeamercolor[fg]{author}
-     \insertauthor\par}
+    \usebeamercolor[fg]{author}
+    \insertauthor\par}
+    $endif$
+
+    \vspace{1em}
 
     $if(date)$
     \vspace{0.5em}
