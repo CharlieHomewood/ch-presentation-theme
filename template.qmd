@@ -1,8 +1,30 @@
 ---
-title: ""
-subtitle: ""
+title: "INSERT TITLE"
+subtitle: "Insert Subtitle"
 date: today
-github: ""
+github: "https://github.com/"
+github-qr: true
 format:
-  	ch-presentation-theme-beamer: default
+  ch-presentation-theme-beamer:
+    include-in-header:
+      text: |
+        \setlength{\parskip}{1em}
 ---
+
+# First Slide!
+
+## Second Slide!
+
+This is a presentation!
+
+Here's a list:
+
+ - 1
+ - 2
+ - 3
+
+And an equation:
+
+$$
+y = wx+b
+$$
