@@ -29,3 +29,6 @@ And an equation:
 $$
 y = wx+b
 $$
+
+::: {#refs}
+:::
